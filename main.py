@@ -32,7 +32,7 @@ while running:
 
     # Draw a red rectangle
     pygame.draw.rect(
-        screen, RED, (100, 100, 50, 50)
+        screen, WHITE, (100, 100, 200, 200), 5
     )  # (surface, color, (x, y, width, height))
 
     # Draw a blue circle
