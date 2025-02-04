@@ -1,4 +1,5 @@
 import pygame
+
 """
 This script creates a simple game window using Pygame.
 
