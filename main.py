@@ -3,10 +3,14 @@ import pygame
 pygame.init()  # Initialize all pygame modules
 
 # Set up the display
-screen_width = 800
-screen_height = 600
-screen = pygame.display.set_mode((screen_width, screen_height))
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 600
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Simple Game Window")
+
+# Game Clock
+clock = pygame.time.Clock()
+FPS = 60
 
 # Color definitions
 WHITE = (255, 255, 255)
@@ -27,20 +31,29 @@ while running:
     screen.fill(BLACK)
 
     # Draw a red rectangle
-    pygame.draw.rect(screen, RED, (100, 100, 50, 50))
+    pygame.draw.rect(
+        screen, RED, (100, 100, 50, 50)
+    )  # (surface, color, (x, y, width, height))
 
     # Draw a blue circle
-    pygame.draw.circle(screen, BLUE, (300, 300), 50)
+    pygame.draw.circle(screen, BLUE, (300, 300), 50)  # (surface, color, center, radius)
 
     # Draw a green line
-    pygame.draw.line(screen, GREEN, (50, 50), (750, 50), 5)
+    pygame.draw.line(
+        screen, GREEN, (50, 50), (750, 50), 5
+    )  # (surface, color, start_pos, end_pos, width)
 
     # Draw a white ellipse
-    pygame.draw.ellipse(screen, WHITE, (400, 400, 100, 200))
+    pygame.draw.ellipse(
+        screen, WHITE, (400, 400, 100, 200)
+    )  # (surface, color, (x, y, width, height))
 
     # Draw a red polygon
-    pygame.draw.polygon(screen, RED, [(500, 500), (600, 500), (550, 600)])
+    pygame.draw.polygon(
+        screen, RED, [(500, 500), (600, 500), (550, 600)]
+    )  # (surface, color, points)
 
     pygame.display.flip()
+    clock.tick(FPS)
 
 pygame.quit()
