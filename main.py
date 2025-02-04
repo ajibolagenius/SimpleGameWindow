@@ -32,6 +32,15 @@ while running:
     # Draw a blue circle
     pygame.draw.circle(screen, BLUE, (300, 300), 50)
 
+    # Draw a green line
+    pygame.draw.line(screen, GREEN, (50, 50), (750, 50), 5)
+
+    # Draw a white ellipse
+    pygame.draw.ellipse(screen, WHITE, (400, 400, 100, 200))
+
+    # Draw a red polygon
+    pygame.draw.polygon(screen, RED, [(500, 500), (600, 500), (550, 600)])
+
     pygame.display.flip()
 
 pygame.quit()
