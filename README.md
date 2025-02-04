@@ -2,7 +2,7 @@
 
 This script creates a simple game window using Pygame.
 
-The script initializes Pygame, sets up a display window with a specified width and height, and enters a main loop to keep the window open and listen for events. The window is filled with a black background, and a red rectangle and a blue circle are drawn on it.
+The script initializes Pygame, sets up a display window with a specified width and height, and enters a main loop to keep the window open and listen for events. The window is filled with a black background, and various shapes (rectangle, circle, line, ellipse, and polygon) are drawn on it.
 
 ## Modules
 
@@ -14,14 +14,16 @@ The script initializes Pygame, sets up a display window with a specified width a
 
 ## Variables
 
-- `screen_width` (int): The width of the game window.
-- `screen_height` (int): The height of the game window.
+- `SCREEN_WIDTH` (int): The width of the game window.
+- `SCREEN_HEIGHT` (int): The height of the game window.
 - `screen` (pygame.Surface): The display surface for the game window.
 - `WHITE` (tuple): RGB color value for white.
 - `BLACK` (tuple): RGB color value for black.
 - `RED` (tuple): RGB color value for red.
 - `GREEN` (tuple): RGB color value for green.
 - `BLUE` (tuple): RGB color value for blue.
+- `FPS` (int): Frames per second for the game loop.
+- `clock` (pygame.time.Clock): Clock object to control the frame rate.
 - `running` (bool): A flag to control the main loop.
 
 ## Environment Setup
@@ -34,7 +36,7 @@ The script initializes Pygame, sets up a display window with a specified width a
 
 ## How to Run the Application
 
-1. Navigate to the directory containing the [main.py] file.
+1. Navigate to the directory containing the [main.py](main.py) file.
 2. Run the script using Python:
     ```sh
     python main.py
